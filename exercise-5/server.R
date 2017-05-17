@@ -36,9 +36,9 @@ shinyServer(function(input, output) {
     
     #Define a y axis value based on the input Agree or Disagree
     if(input$thoughts == "Agree") {
-      thoughts = plot.data$agree
+      thoughts <- plot.data$agree
     } else {
-      thoughts = plot.data$disagree
+      thoughts <- plot.data$disagree
     }
     
     #Using the values you just defined, construct a scatterplot using ggplot2
